@@ -9,17 +9,26 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" href="{{ url_for('static', filename='logo-2.png') }}">
+    <!--<link rel="icon" type="image/png" href="{{ url_for('static', filename='logo-2.png') }}"> -->
+    <link rel="icon" type="image/png" href="static/logo-2.png">
     <title>JKS</title>
     
 	
-	<link href="{{ url_for('static', filename='owl.carousel.min.css') }}" rel="stylesheet" />
-    <link href="{{ url_for('static', filename='owl.theme.default.min.css') }}" rel="stylesheet" />
+	<!--<link href="{{ url_for('static', filename='owl.carousel.min.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='owl.theme.default.min.css') }}" rel="stylesheet" /> -->
+    <link href="static/owl.carousel.min.css" rel="stylesheet" />
+    <link href="static/owl.theme.default.min.css" rel="stylesheet" />
+
     <!-- Bootstrap Core CSS -->
-    <link href="{{ url_for('static', filename='bootstrap.min-RES.css') }}" rel="stylesheet">
+    <!--<link href="{{ url_for('static', filename='bootstrap.min-RES.css') }}" rel="stylesheet"> -->
+    <link href="static/bootstrap.min-RES.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="{{ url_for('static', filename='helper.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename='style-RES.css') }}" rel="stylesheet">
+    <!--<link href="{{ url_for('static', filename='helper.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='style-RES.css') }}" rel="stylesheet"> -->
+    <link href="static/helper.css" rel="stylesheet">
+    <link href="static/style-RES.css" rel="stylesheet">
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:** -->
     <!--[if lt IE 9]>
@@ -38,7 +47,8 @@
 
                 <!-- Logo -->
                 <div class="navbar-header">
-                    <a href="http://localhost/www/wordpress-5.6.2/wordpress/" class="menuzord-brand"><img src="{{url_for('static', filename='logo-2.png')}}" />
+                    <!--<a href="http://localhost/www/wordpress-5.6.2/wordpress/" class="menuzord-brand"><img src="{{url_for('static', filename='logo-2.png')}}" /> -->
+                    <a href="http://localhost/www/wordpress-5.6.2/wordpress/" class="menuzord-brand"><img src="static/logo-2.png" />
 
 </a>
                 </div>
@@ -196,7 +206,8 @@
                                 <h4>RECENT TRENDS IN {{quote}} STOCK PRICES</h4>
                             </div>
                             <div class="sales-chart">
-                                <img src="{{url_for('static', filename='Trends.png')}}" />
+                                <!--<img src="{{url_for('static', filename='Trends.png')}}" />-->
+                                <img src="static/Trends.png" />
                             </div>
                         </div>
                         <!-- /# card -->
@@ -209,7 +220,8 @@
                                 <h4>ARIMA MODEL ACCURACY</h4>
                             </div>
                             <div class="sales-chart">
-                                <img src="{{url_for('static', filename='ARIMA.png')}}" />
+                                <!--<img src="{{url_for('static', filename='ARIMA.png')}}" /> -->
+                                <img src="static/ARIMA.png" />
                             </div>
                         </div>
                         <!-- /# card -->
@@ -221,7 +233,8 @@
                                 <h4>LSTM MODEL ACCURACY</h4>
                             </div>
                             <div class="team-chart">
-                                <img src="{{url_for('static', filename='LSTM.png')}}" />
+                                <!--<img src="{{url_for('static', filename='LSTM.png')}}" /> -->
+                                <img src="static/LSTM.png" />
                             </div>
                         </div>
                     </div>
@@ -231,7 +244,8 @@
                                 <h4>LINEAR REGRESSION MODEL ACCURACY</h4>
                             </div>
                             <div class="team-chart">
-                                <img src="{{url_for('static', filename='LR.png')}}" />
+                                <!--<img src="{{url_for('static', filename='LR.png')}}" />-->
+                                <img src="static/LR.png" />
                             </div>
                         </div>
                     </div>
@@ -344,7 +358,8 @@
                                             <tr>
                                                 <td>
                                                     <div class="round-img">
-                                                        <a href="https://twitter.com/"><img style="padding: 0px,0px,0px,0px;width:70px;height: 70px;" src="{{url_for('static', filename='twitter-logo.png')}}" alt=""></a>
+                                                        <a href="https://twitter.com/"> <!--<img style="padding: 0px,0px,0px,0px;width:70px;height: 70px;" src="{{url_for('static', filename='twitter-logo.png')}}" alt=""> -->
+                                                        <img style="padding: 0px,0px,0px,0px;width:70px;height: 70px;" src="static/twitter-logo.png" alt=""></a> 
                                                     </div>
                                                 </td>
                                                 <td>{% for i in range(0,12) %}
@@ -367,7 +382,8 @@
                                 <h4>SENTIMENT ANALYSIS FOR {{quote}} TWEETS</h4>
                             </div>
                             <div class="sales-chart">
-                                <img src="{{url_for('static', filename='SA.png')}}" />
+                                <!--<img src="{{url_for('static', filename='SA.png')}}" />-->
+                                <img src="static/SA.png" />
                             </div>
                         </div>
                     </div>
@@ -393,7 +409,8 @@
                                             <tr>
                                                 <td>
                                                     <div>
-                                                        <a href="https://finance.yahoo.com/quote/{{quote}}"><img style="padding: 0px,0px,0px,0px;width:120px;height: 120px;" src="{{url_for('static', filename='fore.png')}}" alt=""></a>
+                                                        <a href="https://finance.yahoo.com/quote/{{quote}}"> <!--<img style="padding: 0px,0px,0px,0px;width:120px;height: 120px;" src="{{url_for('static', filename='fore.png')}}" alt=""> -->
+                                                        <img style="padding: 0px,0px,0px,0px;width:120px;height: 120px;" src="static/fore.png" alt=""></a>
                                                     </div>
                                                 </td>
                                                 <td>{% for row in forecast_set %}
@@ -467,7 +484,8 @@
             <div class="footer-section-area padding-top-bottom">
   <div class="container" style="background-color: #1f2b31;">
     <div class="row">
-      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img  src="{{url_for('static', filename='logo-2.png')}}"</a>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"> <!--<img  src="{{url_for('static', filename='logo-2.png')}}"</a> -->
+        <img src="static/logo-2.png"/>
         <p style="color:white;">JKS was started with a common goal of serving the finance community while they make transitions. All our team members bring to table their unique expertise and experience of stock market which they would like to pass on to future investors.</p>
         
       </div>
@@ -521,16 +539,21 @@ Churchgate (E) Mumbai, Maharashtra, India</li>
     
     <!-- End Wrapper -->
     <!-- All Jquery -->
-    <script src="{{url_for('static', filename='jquery-RES.min.js ')}}"></script>
+   <!-- <script src="{{url_for('static', filename='jquery-RES.min.js ')}}"></script> -->
+   <script src="static/jquery-RES.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
-    <script src="{{url_for('static', filename='popper.min.js')}}"></script>
-    <script src="{{url_for('static', filename='bootstrap-RES.min.js')}}"></script>
+    <!--<script src="{{url_for('static', filename='popper.min.js')}}"></script>
+    <script src="{{url_for('static', filename='bootstrap-RES.min.js')}}"></script> -->
+    <script src="static/popper.min.js"></script>
+    <script src="static/bootstrap-RES.min.js"></script>
     <!-- slimscrollbar scrollbar JavaScript -->
-    <script src="{{url_for('static', filename='jquery.slimscroll.js')}}"></script>
+   <!-- <script src="{{url_for('static', filename='jquery.slimscroll.js')}}"></script> -->
+   <script src="static/jquery.slimscroll.js"></script>
     <!--Menu sidebar -->
-    <script src="{{url_for('static', filename='sidebarmenu.js')}}"></script>
+    <!--<script src="{{url_for('static', filename='sidebarmenu.js')}}"></script> -->
+    <script src="static/sidebarmenu.js"></script>
     <!--stickey kit -->
-    <script src="{{url_for('static', filename='sticky-kit.min.js')}}"></script>
+    <!--<script src="{{url_for('static', filename='sticky-kit.min.js')}}"></script> 
 	
 	
     <script src="{{url_for('static', filename='d3.min.js')}}"></script>
@@ -541,13 +564,25 @@ Churchgate (E) Mumbai, Maharashtra, India</li>
     <script src="{{url_for('static', filename='jquery.simpleWeather.min.js')}}"></script>
     <script src="{{url_for('static', filename='weather-init.js')}}"></script>
     <script src="{{url_for('static', filename='owl.carousel.min.js')}}"></script>
-    <script src="{{url_for('static', filename='owl.carousel-init.js')}}"></script>
+    <script src="{{url_for('static', filename='owl.carousel-init.js')}}"></script> -->
+    <script src="static/sticky-kit.min.js"></script>
+    <script src="static/d3.min.js"></script>
+    <script src="static/topojson.js"></script>
+    <script src="static/datamaps.world.min.js"></script>
+    <script src="static/datamap-init.js"></script>
+    <script src="static/jquery.simpleWeather.min.js"></script>
+    <script src="static/weather-init.js"></script>
+    <script src="static/owl.carousel.min.js"></script>
+    <script src="static/owl.carousel-init.js"></script>
 
     <!-- Echart -->
-    <script src="{{url_for('static', filename='echarts.js')}}"></script>
-    <script src="{{url_for('static', filename='dashboard1-init.js')}}"></script>
+    <!--<script src="{{url_for('static', filename='echarts.js')}}"></script>
+    <script src="{{url_for('static', filename='dashboard1-init.js')}}"></script> -->
+    <script src="static/echarts.js"></script>
+    <script src="static/dashboard1-init.js"></script>
     <!--Custom JavaScript -->
-    <script src="{{url_for('static', filename='custom.min.js')}}"></script>
+    <!--<script src="{{url_for('static', filename='custom.min.js')}}"></script> -->
+    <script src="static/custom.min.js"></script>
 
 </body>
 
